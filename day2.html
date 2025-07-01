@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day2 Html</title>
+    <!-- inline css  -->
+    <style>
+       table{
+        border:1px solid green;
+       }
+        th,td {
+            border: 1px solid gray;
+            padding: 8px 20px 50px 25px;
+        }
+    </style>
+    <!-- External css use here  -->
+    <script src="myjs.js"></script>
+</head>
+<body>
+    
+    <dt>Hindi</dt>
+    <dd>this is hindi kzbcksdbv</dd>
+    <dt>English</dt>
+    <dd>English hi kjbvisbvis</dd>
+    <audio controls autoplay muted loop>
+        <source src="audio/tone.mp3" type="audio/mp3"/>
+    </audio>
+    <video controls autoplay muted loop>
+        <source src="video/mov_bbb.mp4" type="video/mp4"/>
+    </video>
+    <iframe style="height:200px;width:200px;border:10px solid green" src="https://www.youtube.com/embed/kkOuRJ69BRY?si=U6_G7ZvtmnRW8VVH"></iframe>
+    <br><br>
+
+    <table>
+        <thead>
+            <tr>
+               <th>Serial No</th> 
+               <th>Name</th> 
+               <!-- <th colspan="2">Merge TH</th> -->
+               <th>Mobile</th> 
+               <th>Email</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- <td>1</td>
+                <td>Rohan</td> -->
+                <td colspan="2">hii</td>
+                <td>9898989898</td>
+                <td>rohan@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+
+    
+    <form>
+       <fieldset>
+            <legend style="text-align:center">Hello Guys</legend>
+        <label>Name</label><br>
+        <!-- internal css here  -->
+         <!-- style="border:5px solid red" -->
+        <input  type="text" placeholder="Enter Your Name" value="Sanju" style="border:5px solid red"/>
+        <br>
+        <label>Mobile</label><br>
+        <input type="number" placeholder="Enter Your Mobile"/>
+        <br>
+        <label>Email</label><br>
+        <input type="email" placeholder="Enter Your Email"/>
+        <br>
+        <label>Password</label><br>
+        <input type="password" placeholder="Enter Your Password"/>
+        <br>
+        <label>Gender</label><br>
+        <input type="radio" value="Male" name="gender" />Male
+        <input type="radio" value="Female" name="gender" checked/>Female
+        <br>
+        <label>City</label><br>
+        <select>
+            <option disabled="true" selected="true">-- Select City --</option>
+            <option value="noida">Noida</option>
+            <option value="delhi">Delhi</option>
+            <option value="kanpur">Kanpur</option>
+        </select>
+        <br>
+        <label>Address</label><br>
+        <textarea placeholder="Please Description Here"></textarea>
+        <br>
+        <label>Hobby</label><br>
+        <input type="checkbox" value="cricket" />Cricket
+        <input type="checkbox" value="singing" />Singing
+        <input type="checkbox" value="dancing" />Dancing
+        <br>
+        <label>Image</label><br>
+        <input type="file"/>
+        <br><br>
+        <input type="button" value="Submit"/>
+        <button>Save</button>
+       </fieldset>
+    </form>
+    <br><br>
+    
+</body>
+</html>
