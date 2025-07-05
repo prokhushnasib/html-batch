@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day5 HTML</title>
+    <style>
+        #mydiv1{
+            height:200px;
+            width:200px;
+            background-color: gray;
+            border: 1px solid red;
+            border-radius: 0% 100% 100% 0%;
+        }
+        #mydiv2{
+            height:200px;
+            width:200px;
+            background-color: red;
+            border: 1px solid yellow;
+            border-radius: 100% 100% 0% 0%;
+        }
+        #mydiv3{
+            height:200px;
+            width:200px;
+            background-color: black;
+            border: 1px solid red;
+            border-radius: 0% 0% 0% 100%;
+        }
+
+        #mydiv4{
+            height:200px;
+            width:200px;
+            background-color: black;
+            border: 1px solid red;
+            box-shadow: 10px 10px 5px green;
+        }
+
+        #mydiv5{
+            height:200px;
+            width:200px;
+            background-color: gray;
+            border: 1px solid orange;
+            box-shadow: 10px 10px 5px green;
+            transform:translate(300px,-100px);      
+            /* translate(X,Y); axis  100,20 */
+        }
+        #mydiv6{
+            height:200px;
+            width:200px;
+            background-color: gray;
+            border: 1px solid orange;
+            box-shadow: 10px 10px 5px green;
+            border-radius:0% 50% 0% 0%;
+            transition:transform 4s;
+        }
+        #mydiv6:hover{
+            transform:rotate(90deg);
+        }
+
+        #parent{
+            height:200px;
+            width:200px;
+            background-color:aqua;
+        }
+        #top{
+            height:100px;
+            width:200px;
+            background-color:green;
+        }
+        #bottom{
+            height:100px;
+            width:200px;
+            background-color:orange;
+        }
+    </style>
+</head>
+<body>
+    <div id="mydiv1"></div>
+    <div id="mydiv2"></div>
+    <div id="mydiv3"></div><br>
+    <div id="mydiv4"></div><br>
+    <div id="mydiv5"></div><br>
+    <div id="mydiv6"></div><br><br>
+
+    <div id="parent">
+        <div id="top">
+            <div id="topleft"></div>
+            <div id="topright"></div>
+        </div>
+        <div id="bottom">
+            <div id="bottomleft"></div>
+            <div id="bottomright"></div>
+        </div>
+    </div>
+    
+    <br>
+    <br><br>
+</body>
+</html>

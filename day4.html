@@ -106,6 +106,66 @@
         text-shadow: 5px 5px 3px green;
        }
 
+       #img_border{
+        border-radius: 10% 100% 10% 100%;
+       }
+
+       #mydiv{
+        /* border-bottom-right-radius: 100%; */
+        border-radius: 0% 100% 100% 0%;
+        background-color: red;
+        height:100px;
+        width:100px;
+       }
+       #mydiv1{
+        /* border-bottom-left-radius: 100%; */
+        border-radius: 0% 0% 0% 100%;
+        background-color: #ff0000;
+        height:100px;
+        width:100px;
+       }
+        #mydiv2{
+        border-radius: 100% 100% 0% 0%;
+        background-color: #ff0000;
+        height:100px;
+        width:100px;
+       }
+
+       #mydiv3{
+        border-radius: 0% 0% 100% 100%;
+        background-color: #ff0000;
+        height:100px;
+        width:100px;
+       }
+
+        #mydiv4{
+        background-color: #574a4a;
+        height:100px;
+        width:100px;
+        box-shadow:20px 20px 5px green; 
+       }
+
+        #mydiv5{
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+        transform: translate(500px, 50px); 
+        }
+
+        #mydiv6{
+        width: 100px;
+        height: 100px;
+        border-radius:100% 100% 100% 0%;
+        background: red;
+         transition: transform 0.3s;
+        }
+
+        #mydiv6:hover {
+            transform: rotate(180deg);
+        }
+
+
+
     </style>
 </head>
 <body>
@@ -116,6 +176,17 @@
     <h2 id="firoz" class="day4">Firoz</h2>
     <span class="day5">Hello</span>   <!-- inline block level element -->
     
+
+    <img src="images/img1.jpg" id="img_border" alt="">
+    <br><br>
+
+    <div id="mydiv"></div><br>
+    <div id="mydiv1"></div><br>
+    <div id="mydiv2"></div><br>
+    <div id="mydiv3"></div><br>
+    <div id="mydiv4"></div><br>
+    <div id="mydiv5"></div><br><br>
+    <div id="mydiv6"></div><br><br>
 
 
 </body>
