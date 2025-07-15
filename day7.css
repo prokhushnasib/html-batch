@@ -1,0 +1,63 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color:antiquewhite;
+}
+.main{
+    width:100%;
+    background-color:red;
+    padding:30px;
+}
+.card
+{
+    height:400px;
+    width:250px;
+    background-color:aliceblue;  
+    box-shadow:5px 5px 8px gray;
+    text-align:center;
+    border:2px solid rgb(187, 245, 187);
+    border-radius:10px;
+    cursor:pointer;
+    position:relative;
+}
+.card:hover{
+    transform:scale(1.04);
+}
+.badge{
+    top:10px;
+    left:10px;
+    position:absolute;
+    background-color:orange;
+    color:white;
+    padding:5px 10px;
+    border-radius:30px;
+}
+
+.card h3{
+    padding:10px 0px;
+}
+.card p{
+    color:gray;
+    font-weight:300;
+    padding:10px 0px;
+}
+.card h4{
+    padding:5px 0px;
+}
+.card button{
+    border:1px solid rgb(233, 104, 19);
+    background-color:aquamarine;
+    padding:5px 10px;
+    border-radius:30px;
+    font-weight:600;
+    font-size:14px;
+    color:black;
+}
+.card button:hover{
+    background-color:green;
+    color:white;
+    cursor:pointer;
+}
