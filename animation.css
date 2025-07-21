@@ -1,0 +1,69 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+html,body{
+    height:100%;
+    background-color:aliceblue;
+    position: relative;
+}
+#card{
+    height:350px;
+    width:350px;
+    background-color: rgb(233, 233, 12);
+    position: absolute;
+    animation-name:move;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    /* animation-fill-mode:forwards; */
+    /* animation-iteration-count: infinite; */
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+@keyframes move{
+    0%{
+        left:0%;
+        top:0%;
+        background-color: rgb(231, 135, 10);
+        border-radius: 0px solid green;
+    }
+    25%{
+        left:75%;
+        top:0%;
+        background-color: rgb(1, 184, 83);
+        border-radius: 50%;
+        box-shadow: 20px 10px 1px gray;
+        height:300px;
+        width:300px;
+    }
+    50%{
+        left:75%;
+        top:60%;
+        background-color: rgb(2, 3, 2);
+        border-radius: 50%;
+        box-shadow: 20px 10px 1px rgb(73, 10, 10);
+        height:250px;
+        width:250px;
+    }
+    75%{
+        left:0%;
+        top:60%;
+        background-color: rgb(75, 5, 5);
+        border-radius: 50%;
+        box-shadow: 20px 10px 1px rgb(212, 253, 26);
+        height:200px;
+        width:200px;
+    }
+    100%{
+        left:0%;
+        top:0%;
+        background-color: aqua;
+        border-radius: 50%;
+        box-shadow: 20px 10px 1px rgb(212, 253, 26);
+        height:150px;
+        width:150px;
+    }
+}
