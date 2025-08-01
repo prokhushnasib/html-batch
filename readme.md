@@ -11,3 +11,18 @@
 5=> ibs campus
 
 
+
+
+Bootstrap is a html,css framework for designing 
+===============================================
+text  (text color ke liye)
+ex:- text-primary
+primary,secondary,info,warning,light,dark,danger,white
+
+bg (background color ke liye)  
+ex:- bg-danger
+primary,secondary,info,warning,light,dark,danger,white
+
+button (button ke liye)
+ex:- btn btn-danger 
+primary,secondary,info,warning,light,dark,danger,white
