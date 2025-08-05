@@ -1,0 +1,88 @@
+$title = '🙏 ' . $product->product_name . ' Booked Successfully';
+$body = 'Your ' . $product->product_name . ' offering has been received. Our team will connect with you shortly for further coordination.';
+$this->sendUserPushNotification($user_id,$title,$body);
+
+
+registered time not received any WhatsApp message
+complete and confirm time not received any WhatsApp message
+
+filial k  liye confirm pe same rehne do
+compelete pe feedback wala dal do         (feedback wali template)
+
+if (in_array($newStatus, ['Confirmed', 'Completed']) && $user) {
+    $this->sendWhatsAppMessage($user->name, $user->mobile, $newStatus);
+}
+
+
+
+
+what's app message kisi bhi case me nhi a rhi mujhe
+
+mail bhi nhi ayi
+
+🌼 Donation Successful
+Your donation has been successfully recorded. May the divine grace of Maa Baglamukhi always guide and protect you.
+
+🙏 Havan Booked Successfully
+Your Havan offering has been received.Our team will connect with you shortly for further coordination.
+
+
+php artisan config:clear
+php artisan cache:clear
+php artisan config:cache
+php artisan queue:work
+
+
+1=> user registered time notification,mail,whatsapp (same no same ms ki wjh se whatsapp nhi ja rha)
+2=> donation time notification,mail     (DONE)
+3=> booking time notification,mail      (DONE)
+4=> Donation Confirmed from admin notification,mail,whatsapp message a rha h. but jis no par kaibar kar chuke it's problem (DONE)
+5=> Donation Completed from admin notification,mail,whatsapp message a rha h. but jis no par kaibar kar chuke it's problem (DONE)
+6=> mail bhi ja rhi hai sabhi me 
+7=> Booking Confirmed from admin notification,mail,whatsapp message a rha h. but jis no par kaibar kar chuke it's problem (DONE)
+8=> Booking Completed from admin notification,mail,whatsapp message a rha h. but jis no par kaibar kar chuke it's problem (DONE)
+9=> Donation History me call,remarks,booking confirm,mark complete 
+
+
+$title = 'Your selected time slot is approaching.';
+$body = 'Stay connected.';
+
+
+// Donation Mail 
+
+Subject: 🙏 Donation Received – Maa Baglamukhi Temple, Bankhandi
+Dear Khushnasib,
+We have received your generous donation for the sacred services at Maa Baglamukhi Temple, Bankhandi.
+
+🕉️ Donation Details:
+Purpose: [e.g. Temple Seva / Gau Seva / General Donation]
+Donation Amount: ₹[Amount]
+Donation Date: 01-09-2025
+Thank you for your kind support towards the divine cause. Your offering helps sustain the spiritual energy and daily rituals of the temple.
+Our team may reach out to you if any further information is needed.
+
+For any queries, feel free to call us at:
+📞 9816565656, 9816500036, 9350000036
+🙏 Jai Maa Baglamukhi!
+Maa Baglamukhi Temple, Bankhandi
+🌐 https://maabaglamukhiofficial.org/
+
+🕉️ Donation Details:
+Purpose: SEVA
+Donation Amount: ₹[Amount]
+Donation Date: 01-09-2025
+
+
+// Booking COnfirm Mail 
+Subject: 🙏 Your Ritual Booking at Maa Baglamukhi Temple is Confirmed
+Dear Khushnasib,
+We are pleased to inform you that we have received your details for the Havan booking at Maa Baglamukhi Temple, Bankhandi (Himachal Pradesh).
+
+Thank you for showing faith in the sacred rituals performed at the temple.
+Our Trust team will connect with you shortly to guide you through the next steps.
+For any queries or assistance, feel free to contact us at:
+📞 9816565656, 9816500036, 9350000036
+
+Jai Maa Baglamukhi!
+Maa Baglamukhi Temple Trust, Bankhandi
+🌐 https://maabaglamukhiofficial.org

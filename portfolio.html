@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohd Khushnasib : Laravel Developer</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        /* Contact icon font awesome */
+        .contact-icon i {
+            font-size: 15px;
+        }
+
+        /* Add this to your existing stylesheet */
+        @keyframes nameEntry {
+            0% {
+                opacity: 0;
+                transform: translateY(20px) scale(0.95);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        @keyframes titleEntry {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .main-title {
+            display: inline-block;
+            animation: nameEntry 0.8s ease-out forwards;
+            opacity: 0;
+        }
+
+        h2 {
+            animation: titleEntry 1s ease-out forwards;
+            opacity: 0;
+            animation-delay: 0.5s;
+        }
+    </style>
+
+
+    <style>
+        .button-group {
+            display: flex;
+            gap: 1rem;
+            margin-top: 30px;
+        }
+
+        .modern-hire-btn,
+        .modern-download-btn {
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: 600;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+
+        /* Hire Me Button */
+        .modern-hire-btn {
+            background: transparent;
+            border: 2px solid #00d4ff;
+            color: #00d4ff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .modern-hire-btn::before {
+            content: '';
+            position: absolute;
+            width: 0%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: #00d4ff;
+            transition: 0.4s ease;
+            z-index: 0;
+        }
+
+        .modern-hire-btn:hover::before {
+            width: 100%;
+        }
+
+        .modern-hire-btn:hover {
+            color: #000;
+            border-color: #00d4ff;
+        }
+
+        .modern-hire-btn span,
+        .modern-hire-btn {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Download CV Button */
+        .modern-download-btn {
+            background: linear-gradient(135deg, #00d4ff, #007cf0);
+            color: #fff;
+            box-shadow: 0 4px 20px rgba(0, 212, 255, 0.4);
+        }
+
+        .modern-download-btn:hover {
+            background: linear-gradient(135deg, #00aaff, #0055cc);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(0, 212, 255, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Background patterns -->
+    <div class="bg-pattern"></div>
+    <div class="particles" id="particles"></div>
+
+    <!-- Header Navigation -->
+    <header>
+        <nav>
+            <div class="logo">&lt;/Developer&gt;</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Main Content -->
+    <div class="main-container" id="home">
+        <div class="content-grid">
+            <div class="left-content">
+                <h6 class="main-title fade-in-up">
+                    Mohd Khushnasib
+                </h6>
+
+                <h2>Full-Stack Developer</h2><br>
+                <p class="subtitle fade-in-up" style="animation-delay: 0.2s;">
+                    <span id="typing-text">PHP & Laravel Expert</span>
+                    <span class="cursor">|</span>
+                </p>
+
+                <div class="profile-badge fade-in-up" style="animation-delay: 0.4s;">
+                    <div class="profile-icon">👨‍💻</div>
+                    <span>Laravel Developer</span>
+                </div>
+
+                <p class="description fade-in-up" style="animation-delay: 0.6s;">
+                    Passionate backend developer specializing in PHP, Laravel, and RESTful API development. I create
+                    scalable, secure, and high-performance server-side solutions that power modern web applications.
+                </p>
+
+                <!-- Hire Me,Download CV,Github,Linkedin Start Here -->
+                <div class="button-group fade-in-up" style="animation-delay: 1s;">
+                    <a href="#contact" class="btn btn-hire">
+                        Hire Me
+                    </a>
+                    <a href="cv/MohdKhusnasib_LaravelDev.pdf" class="btn btn-download" target="_blank"
+                        download="MohdKhusnasib_LaravelDev.pdf">
+                        ⬇️ Download CV
+                    </a>
+                    <a href="https://github.com/prokhushnasib" class="social-link" title="GitHub" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/prokhushnasib" class="social-link" title="LinkedIn"
+                        target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <!-- Hire Me,Download CV,Github,Linkedin End Here -->
+
+
+            </div>
+
+            <div class="right-content">
+                <div class="profile-container slide-in-right" style="animation-delay: 0.5s;">
+                    <div class="profile-image-container">
+                        <img src="./cv/khushnasib.jpeg" alt="Profile Image" class="blinking-image profile-image">
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- Right Content - Profile Image -->
+            <!-- <div class="right-content">
+                <div class="profile-container slide-in-right" style="animation-delay: 0.5s;">
+                    <div class="profile-circle">
+                        <div class="code-screen">
+                            <div class="terminal-header">
+                                <div class="terminal-dot dot-red"></div>
+                                <div class="terminal-dot dot-yellow"></div>
+                                <div class="terminal-dot dot-green"></div>
+                            </div>
+                            <div class="code-lines">
+                                <div class="code-line"></div>
+                                <div class="code-line"></div>
+                                <div class="code-line"></div>
+                                <div class="code-line"></div>
+                                <div class="code-line"></div>
+                                <div class="code-line"></div>
+                                <div class="code-line"></div>
+                                <div class="code-line"></div>
+                                <div class="code-line"></div>
+                                <div class="code-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+    </div>
+
+    <!-- About Me Section -->
+    <section class="about-section" id="about">
+        <div class="section-container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-left">
+                    <div class="profile-image-about">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjMWExYTFhIiByeD0iMTAwIi8+Cjx0ZXh0IHg9IjEwMCIgeT0iMTEwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjMDBkNGZmIiBmb250LXNpemU9IjQwIiBmb250LWZhbWlseT0iQXJpYWwiPk1 LPC90ZXh0Pgo8L3N2Zz4="
+                            alt="Mohd Khushnasib" />
+
+                        <!-- <img src="./images/logo.webp" alt="Mohd Khushnasib" /> -->
+                        <div class="name-tag">Mohd Khushnasib</div>
+                    </div>
+                </div>
+                <div class="about-right">
+                    <h3 class="about-title">Laravel Developer based in Noida, India</h3>
+                    <p class="about-description">
+                        I'm <strong>Mohd Khushnasib</strong>, a dedicated Laravel Developer with <strong>2.6
+                            years</strong> of hands-on experience crafting robust and scalable web applications.
+                        Currently working at <strong>Partners Advertising</strong>, I specialize in developing clean
+                        backend architectures, creating RESTful APIs, and building full-stack solutions that address
+                        real business needs.
+                    </p>
+                    <p class="about-description">
+                        I’m passionate about clean, maintainable code, efficient problem-solving, and continuous
+                        learning. Whether it’s optimizing database queries, integrating third-party services, or turning
+                        complex logic into smooth digital workflows — I enjoy delivering real-world solutions with
+                        precision. Outside of coding, I stay curious about emerging technologies and evolving web
+                        development trends.
+                    </p>
+
+
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Name:</span>
+                            <span class="detail-value">Mohd Khushnasib</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Experience:</span>
+                            <span class="detail-value">3 Years</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Role:</span>
+                            <span class="detail-value">Laravel Developer at Partners Advertising</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Key Skills:</span>
+                            <span class="detail-value">Laravel, Codeigniter, PHP, REST APIs, MySQL, Firebase, Git,
+                                JavaScript, JQuery, Node.js, React.js, Third Party Api's, Hosting (HPanel, cPanel).
+                            </span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Email:</span>
+                            <span class="detail-value">mohdkhushnasib92786@gmail.com</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Phone:</span>
+                            <span class="detail-value">+91 8700663512</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Location:</span>
+                            <span class="detail-value">Noida, Uttar Pradesh, India</span>
+                        </div>
+                    </div>
+
+                    <div class="about-cta">
+                        <a href="cv/MohdKhusnasib_LaravelDev.pdf" class="btn btn-download" target="_blank"
+                            download="MohdKhusnasib_LaravelDev.pdf">
+                            ⬇️ Download My CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills & Expertise Section -->
+    <section class="skills-section" id="skills">
+        <div class="section-container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">Backend Development</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-icon">✅</span>
+                            <span class="skill-name">Laravel (Advanced)</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-icon">✅</span>
+                            <span class="skill-name">PHP (Advanced)</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-icon">✅</span>
+                            <span class="skill-name">MySQL (Advanced)</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-icon">✅</span>
+                            <span class="skill-name">RESTful APIs & GraphQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-icon">✅</span>
+                            <span class="skill-name">Authentication & Middleware</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-icon">✅</span>
+                            <span class="skill-name">Laravel Eloquent & Query Builder</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-icon">✅</span>
+                            <span class="skill-name">Unit Testing (PHPUnit)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">Frontend Development</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-icon">✅</span>
+                            <span class="skill-name">HTML5 & CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-icon">✅</span>
+                            <span class="skill-name">JavaScript & jQuery</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-icon">✅</span>
+                            <span class="skill-name">Vue.js, Alpine.js, Livewire (Intermediate)</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-icon">✅</span>
+                            <span class="skill-name">Bootstrap, Tailwind CSS</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-icon">✅</span>
+                            <span class="skill-name">Blade Templating Engine</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">Tools & Workflows</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-icon">✅</span>
+                            <span class="skill-name">Git (GitHub, GitLab, Bitbucket)</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-icon">✅</span>
+                            <span class="skill-name">Postman for API Testing</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-icon">✅</span>
+                            <span class="skill-name">VS Code, PHPStorm</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-icon">✅</span>
+                            <span class="skill-name">Payment Gateway Integration (Stripe, Razorpay)</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-icon">✅</span>
+                            <span class="skill-name">cPanel, Hosting, and Deployment (FTP, SSH)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience-section" id="experience">
+        <div class="section-container">
+            <h2 class="section-title">My Experience</h2>
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="job-title">Laravel Developer</h3>
+                        <p class="job-period">July 2025 - Present</p>
+                        <p class="company">Partners Advertising, Panchkula</p>
+                        <ul class="job-responsibilities">
+                            <li>Working on scalable backend solutions using Laravel</li>
+                            <li>Integrating APIs and managing MySQL databases</li>
+                            <li>Collaborating with frontend and marketing teams</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="job-title">Laravel / Codeigniter Developer</h3>
+                        <p class="job-period">Dec 2024 - June 2025</p>
+                        <p class="company">BhoomiTech, Noida</p>
+                        <ul class="job-responsibilities">
+                            <li>Developed RESTful APIs for internal tools and external integrations</li>
+                            <li>Handled user authentication, role management, and reporting modules</li>
+                            <li>Worked on optimizing existing Laravel applications</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="job-title">Laravel / Codeigniter Developer</h3>
+                        <p class="job-period">Nov 2022 - Nov 2024</p>
+                        <p class="company">Digicoders, Lucknow</p>
+                        <ul class="job-responsibilities">
+                            <li>Led backend development of CRM and ERP solutions</li>
+                            <li>Implemented complex database relationships and Laravel packages</li>
+                            <li>Worked closely with frontend team on full-stack modules</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="job-title">Intern - PHP</h3>
+                        <p class="job-period">Mar 2022 - Nov 2022</p>
+                        <p class="company">Digicoders, Lucknow</p>
+                        <ul class="job-responsibilities">
+                            <li>Learned and applied Laravel fundamentals in real-world projects</li>
+                            <li>Supported senior developers in developing and debugging modules</li>
+                            <li>Worked on basic CRUD operations and authentication systems</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- My Experience Section -->
+    <!-- <section class="experience-section" id="experience">
+        <div class="section-container">
+            <h2 class="section-title">My Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="job-title">Laravel Developer</h3>
+                        <p class="job-period">May 2023 - Present</p>
+                        <p class="company">Digital Web Solutions, Ahmedabad</p>
+                        <ul class="job-responsibilities">
+                            <li>Led development of multi-vendor e-commerce platforms using Laravel</li>
+                            <li>Integrated secure payment gateways (Stripe, Razorpay) and managed API performance</li>
+                            <li>Collaborated with front-end teams using Livewire and Vue.js for seamless UI/UX</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="job-title">Trainee Laravel Developer</h3>
+                        <p class="job-period">Jan 2023 - May 2023</p>
+                        <p class="company">WebCodeGenie, Ahmedabad</p>
+                        <ul class="job-responsibilities">
+                            <li>Assisted in backend tasks for small Laravel-based projects</li>
+                            <li>Practiced MVC, RESTful APIs, and database relationships</li>
+                            <li>Gained practical experience in Agile environments and Git workflows</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Education & Certifications Section -->
+    <section class="education-section" id="education">
+        <div class="section-container">
+            <h2 class="section-title">Education & Certifications</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-icon">🎓</div>
+                    <div class="education-content">
+                        <h3 class="degree-title">B.Tech in Computer Science & Engineering</h3>
+                        <p class="institution">Major S.D. Singh University, Farrukhabad</p>
+                        <p class="duration">2025 - Present</p>
+                        <div class="cgpa-badge">Pursuing</div>
+                    </div>
+                </div>
+
+                <div class="education-card">
+                    <div class="education-icon">🏛️</div>
+                    <div class="education-content">
+                        <h3 class="degree-title">Diploma in Computer Science & Engineering</h3>
+                        <p class="institution">Government Polytechnic Madhogargh (Jalaun)</p>
+                        <div class="cgpa-badge">2018-2021</div>
+                        <div class="cgpa-badge bg-danger">Distinction</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- My Portfolio Section -->
+    <section class="portfolio-section" id="portfolio">
+        <div class="section-container">
+            <h2 class="section-title">My Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="project-card">
+                    <h3 class="project-title">Rupiyamaker CRM</h3>
+                    <p class="project-description">
+                        Rupiyamaker Crm Lead Management HRMS and Perfomance
+                        Features: Role-based logins (Admin, Manager, TL Agent, Executive, Operation Manager) with
+                        modules like Feed,
+                        PLOD Lead/Login, Home Loan Lead/Login, Task, Ticket, Warning, HRMS, Daily & Monthly Performance.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Laravel</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">JQuery</span>
+                        <span class="tech-tag">Ajax</span>
+                        <span class="tech-tag">Bootstrap</span>
+                    </div>
+                    <a href="https://rupiyamaker.babylonengineering.com/login" target="_blank" class="demo-btn">👁️ Live
+                        Demo</a>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-title">Delhi parcel</h3>
+                    <p class="project-description">
+                        parcel booking and secure payments.
+                        Features: Multi-login system (Admin, Seller Branch, Delivery Branch, Booking Branch, Delivery
+                        Boy) with modules like
+                        Parcel Booking Website, Seller Panel, Booking Panel, Orders Management, and PhonePe Integration.
+                        Tech Used: Laravel,Jquery Ajax, Phonepay.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Laravel</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">JQuery</span>
+                        <span class="tech-tag">Ajax</span>
+                        <span class="tech-tag">Bootstrap</span>
+                    </div>
+                    <a href="https://delhiparcel.com" target="_blank" class="demo-btn">👁️ Live Demo</a>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-title">Grabto</h3>
+                    <p class="project-description">
+                        Deals & discounts app with coupon management, secure Razorpay checkout, table booking.
+                        Features: Coupon Management, Admin Panel, Store Management, User Management, Orders, Razorpay
+                        Checkout,
+                        and Website Integration.
+                        Tech Used: Laravel, Firebase notification, Razorpay, REST API.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Laravel</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">JQuery</span>
+                        <span class="tech-tag">Ajax</span>
+                        <span class="tech-tag">API</span>
+                        <span class="tech-tag">Payment Gateway</span>
+                        <span class="tech-tag">SMS Gateway</span>
+                    </div>
+                    <a href="https://grabto.in" target="_blank" class="demo-btn">👁️ Live Demo</a>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-title">Doctcare Services CRM / Website</h3>
+                    <p class="project-description">
+                        Doctcare is a CRM and website designed for managing doctor-related legal services. It includes
+                        multiple logins (Admin, Subadmin, Agent, Employee, User).
+                        <br>
+                        <strong>Purpose:</strong> Provides legal assistance to doctors in case of medical incidents
+                        through membership-based support.
+                        <br>
+                        <strong>Features:</strong> Multi-role Login, Membership System, Case Management, Admin Panel.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Codeigniter</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">JQuery</span>
+                        <span class="tech-tag">Ajax</span>
+                        <span class="tech-tag">API</span>
+                        <span class="tech-tag">SMS Gateway</span>
+                        <span class="tech-tag">Email Integration</span>
+                    </div>
+                    <a href="https://doctcareservices.com" target="_blank" class="demo-btn">👁️ Live Demo</a>
+                </div>
+
+
+                <div class="project-card">
+                    <h3 class="project-title">PCB</h3>
+                    <p class="project-description">
+                        PCB is an e-learning & e-commerce app where users can purchase electronic courses and study
+                        within the app. It also allows users to buy electronic devices and components.
+                        <br>
+                        <strong>Features:</strong> Course Purchase, Video Learning, Product Orders, Admin Panel,
+                        Razorpay Integration.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Laravel</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">JQuery</span>
+                        <span class="tech-tag">Ajax</span>
+                        <span class="tech-tag">API</span>
+                        <span class="tech-tag">Payment Gateway</span>
+                        <span class="tech-tag">SMS Gateway</span>
+                        <span class="tech-tag">Firebase</span>
+                    </div>
+                    <a href="https://pcb.nexttech.fun" target="_blank" class="demo-btn">👁️ Live Demo</a>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-title">Nilet</h3>
+                    <p class="project-description">
+                        Nilet is an informational platform where users can access course details and download their
+                        certificates using enrollment credentials.
+                        <br>
+                        <strong>Features:</strong> Admin, Agent & User Login, Course Management, Certificate
+                        Verification & Download.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Laravel</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">JQuery</span>
+                        <span class="tech-tag">Ajax</span>
+                        <span class="tech-tag">Bootstrap</span>
+                    </div>
+                    <a href="https://nilet.in" target="_blank" class="demo-btn">👁️ Live Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <!-- Floating Elements -->
+        <div class="floating-element">💻</div>
+        <div class="floating-element">⚡</div>
+        <div class="floating-element">🚀</div>
+
+        <!-- Particle Effects -->
+        <div class="particles" id="particles"></div>
+
+        <div class="section-container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Ready to start your next project? Let's build something amazing together!</p>
+
+            <div class="contact-grid">
+                <!-- Left Side - Contact Information -->
+                <div class="contact-info-section">
+                    <h3 class="contact-info-title">Let's Connect</h3>
+                    <p class="contact-description">
+                        Have a Laravel/web project in mind? Or just want to say hello?
+                        Feel free to reach out — I'm always open to new opportunities
+                        and collaborations.
+                    </p>
+
+                    <div class="contact-info-grid">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>mohdkhushnasib92786@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+91 8700663512</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>Noida, Uttar Pradesh, India</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Links Start Here -->
+                    <div class="social-links">
+                        <a href="https://github.com/yourusername" class="social-link" title="GitHub" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/yourusername" class="social-link" title="LinkedIn"
+                            target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    <!-- Social Links End Here -->
+
+                </div>
+
+                <!-- Right Side - Contact Form -->
+                <div class="contact-form-section">
+                    <form class="contact-form" id="contactForm">
+                        <div class="success-message" id="successMessage">
+                            <strong>✅ Message sent successfully!</strong> I'll get back to you soon.
+                        </div>
+
+                        <div class="form-group">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" id="name" name="name" class="form-input"
+                                placeholder="Enter your full name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Your Email Address</label>
+                            <input type="email" id="email" name="email" class="form-input"
+                                placeholder="Enter your email address" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-input"
+                                placeholder="What's this about?" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-textarea"
+                                placeholder="Write your message here..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn" id="submitBtn">
+                            <span class="btn-text">📤 Send Message</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <script src="script.js"></script> -->
+
+    <!-- Contact Section JS Start Here -->
+    <script>
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 50;
+
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 8 + 's';
+                particle.style.animationDuration = (Math.random() * 5 + 8) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        // Form submission handler
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const submitBtn = document.getElementById('submitBtn');
+            const successMessage = document.getElementById('successMessage');
+            const btnText = submitBtn.querySelector('.btn-text');
+
+            // Show loading state
+            submitBtn.classList.add('loading');
+            btnText.textContent = 'Sending...';
+
+            // Simulate form submission
+            setTimeout(() => {
+                // Hide loading state
+                submitBtn.classList.remove('loading');
+                btnText.textContent = '📤 Send Message';
+
+                // Show success message
+                successMessage.style.display = 'block';
+
+                // Reset form
+                this.reset();
+
+                // Hide success message after 5 seconds
+                setTimeout(() => {
+                    successMessage.style.display = 'none';
+                }, 5000);
+
+            }, 2000);
+        });
+
+        // Input focus effects
+        document.querySelectorAll('.form-input, .form-textarea').forEach(input => {
+            input.addEventListener('focus', function () {
+                this.parentElement.style.transform = 'translateY(-2px)';
+            });
+
+            input.addEventListener('blur', function () {
+                this.parentElement.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Enhanced hover effects for contact items
+        document.querySelectorAll('.contact-item').forEach(item => {
+            item.addEventListener('mouseenter', function () {
+                const icon = this.querySelector('.contact-icon');
+                icon.style.transform = 'scale(1.1) rotate(10deg)';
+                icon.style.transition = 'all 0.3s ease';
+            });
+
+            item.addEventListener('mouseleave', function () {
+                const icon = this.querySelector('.contact-icon');
+                icon.style.transform = 'scale(1) rotate(0deg)';
+            });
+        });
+
+        // Initialize particles on page load
+        window.addEventListener('load', () => {
+            createParticles();
+        });
+
+        // Parallax effect on mouse move
+        document.addEventListener('mousemove', (e) => {
+            const mouseX = e.clientX / window.innerWidth;
+            const mouseY = e.clientY / window.innerHeight;
+
+            document.querySelectorAll('.floating-element').forEach((element, index) => {
+                const speed = (index + 1) * 0.02;
+                const x = (mouseX - 0.5) * 100 * speed;
+                const y = (mouseY - 0.5) * 100 * speed;
+                element.style.transform = `translate(${x}px, ${y}px)`;
+            });
+        });
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                }
+            });
+        }, observerOptions);
+
+        // Observe animated elements
+        document.querySelectorAll('[class*="slide"], [class*="fade"]').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+    <!-- Contact Section JS End Here -->
+
+    <script>
+        // Typewriter effect for subtitle
+        const typingTexts = [
+            "PHP & Laravel Expert",
+            "Backend Developer",
+            "API Developer",
+            "Laravel Specialist",
+            "Full Stack Developer"
+        ];
+
+        let textIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function typeWriter() {
+            const currentText = typingTexts[textIndex];
+            const typingElement = document.getElementById('typing-text');
+
+            if (isDeleting) {
+                typingElement.textContent = currentText.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typingElement.textContent = currentText.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            let typingSpeed = isDeleting ? 50 : 100;
+
+            if (!isDeleting && charIndex === currentText.length) {
+                typingSpeed = 2000; // Pause at end
+                isDeleting = true;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                textIndex = (textIndex + 1) % typingTexts.length;
+                typingSpeed = 500; // Pause before next text
+            }
+
+            setTimeout(typeWriter, typingSpeed);
+        }
+
+        // Start typewriter effect after page loads
+        setTimeout(typeWriter, 2000);
+
+        // Create floating particles
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 80;
+
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 8 + 's';
+                particle.style.animationDuration = (Math.random() * 4 + 6) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    const offsetTop = targetElement.offsetTop - 100; // Account for fixed header
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Active navigation highlighting
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section, .main-container');
+            const navLinks = document.querySelectorAll('.nav-links a');
+
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 150;
+                const sectionHeight = section.clientHeight;
+                if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id') || 'home';
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Enhanced hover effects for stats
+        document.querySelectorAll('.stat-item').forEach(stat => {
+            stat.addEventListener('mouseenter', function () {
+                this.style.transform = 'translateY(-10px) scale(1.05)';
+                this.style.transition = 'all 0.3s ease';
+                this.querySelector('.stat-number').style.textShadow = '0 0 30px rgba(0, 212, 255, 0.8)';
+            });
+
+            stat.addEventListener('mouseleave', function () {
+                this.style.transform = 'translateY(0) scale(1)';
+                this.querySelector('.stat-number').style.textShadow = '0 0 20px rgba(0, 212, 255, 0.3)';
+            });
+        });
+
+        // Initialize on page load
+        window.addEventListener('load', () => {
+            createParticles();
+        });
+
+        // Add dynamic typing effect to code lines
+        function animateCodeLines() {
+            const codeLines = document.querySelectorAll('.code-line');
+            codeLines.forEach((line, index) => {
+                setTimeout(() => {
+                    line.style.width = Math.random() * 30 + 60 + '%';
+                }, index * 200);
+            });
+        }
+
+        // Start code animation
+        setInterval(animateCodeLines, 3000);
+
+        // Parallax effect for background
+        document.addEventListener('mousemove', (e) => {
+            const particles = document.querySelectorAll('.particle');
+            const x = e.clientX / window.innerWidth;
+            const y = e.clientY / window.innerHeight;
+
+            particles.forEach((particle, index) => {
+                const speed = (index % 5 + 1) * 0.5;
+                particle.style.transform += ` translate(${x * speed}px, ${y * speed}px)`;
+            });
+        });
+    </script>
+</body>
+
+</html>
